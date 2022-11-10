@@ -4,7 +4,7 @@ import {
     savefrom
   } from '@bochilteam/scraper';
 const app = express()
-app.all('/', (req, res) => {
+app.all('/abc', (req, res) => {
     const url = req.query.url;
 console.log(url);
   savefrom(url).then(
