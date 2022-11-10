@@ -1,8 +1,5 @@
 const express = require('express')
-const scraper = require ('@bochilteam/scraper');
-import {
-    savefrom
-  } from '@bochilteam/scraper';
+const savefrom = require ('@bochilteam/scraper');
 const app = express()
 app.all('/abc', (req, res) => {
     const url = req.query.url;
