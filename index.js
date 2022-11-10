@@ -1,10 +1,10 @@
 const express = require('express')
-const savefrom = require ('@bochilteam/scraper');
+const scraper = require ('@bochilteam/scraper');
 const app = express()
 app.all('/abc', (req, res) => {
     const url = req.query.url;
 console.log(url);
-  savefrom(url).then(
+  scraper(url).then(
     data=>{
          res.json( transform(data) )
     }
